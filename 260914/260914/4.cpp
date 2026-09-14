@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+void StarPyramid() {
+    int n, i, j, h;
+    scanf_s("%d", &n);
+    h = n / 2;
+    for (i = 0; i <= h; i++) {
+        for (j = 0; j < i; j++) printf(" ");
+        for (j = 0; j < n - 2 * i; j++) printf("*");
+        printf("\n");
+    }
+    for (i = h - 1; i >= 0; i--) {
+        for (j = 0; j < i; j++) printf(" ");
+        for (j = 0; j < n - 2 * i; j++) printf("*");
+        printf("\n");
+    }
+}
